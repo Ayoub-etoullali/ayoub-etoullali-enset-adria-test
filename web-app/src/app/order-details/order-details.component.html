@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Ajoutez ici vos styles personnalisés */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      font-weight: bold;
+    }
+    .list-group-item {
+      border: none;
+    }
+    .table {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-2" *ngIf="orderDetails">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Order ID: {{orderId}}</div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">Order ID: {{orderDetails.id}}</li>
+            <li class="list-group-item">Date: {{orderDetails.createdAt | date : 'dd/MM/yyyy'}}</li>
+            <li class="list-group-item">Status: {{orderDetails.status}}</li>
+            <li class="list-group-item">Customer ID: {{orderDetails.customer.id}}</li>
+            <li class="list-group-item">Customer Name: {{orderDetails.customer.name}}</li>
+            <li class="list-group-item">Customer Email: {{orderDetails.customer.email}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">Product Items</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+            <tr class="bg-dark text-white">
+              <th>Product ID</th>
+              <th>Product Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Discount</th>
+              <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let pi of orderDetails.productItems">
+              <td>{{pi.product.id}}</td>
+              <td>{{pi.product.name}}</td>
+              <td>{{pi.quantity}}</td>
+              <td class="text-end">{{pi.price | number : '.1'}}</td>
+              <td class="text-end">{{pi.discount | number : '.1'}}</td>
+              <td class="text-end">{{pi.amount | number : '.1'}}</td>
+            </tr>
+            <tr class="bg-dark text-white">
+              <td colspan="5" class="text-end">Total</td>
+              <td class="text-end">{{orderDetails.total | number : '.1'}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
