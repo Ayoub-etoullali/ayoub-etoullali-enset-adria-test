@@ -59,7 +59,10 @@ Le service Wallet gère les portefeuilles des clients, enregistrant les informat
 Le service Transfer gère les transferts d'argent entre les portefeuilles des clients.
 
 #### Endpoints API
-- `GET /transfers/{id}` : Récupérer les détails d'un transfert par ID.
+- `GET /transfers`
+
+![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/9711b6a1-9e21-42ae-8202-3127681f52fa)
+
 - `POST /transfers` : Créer un nouveau transfert.
 - `PUT /transfers/{id}` : Mettre à jour l'état d'un transfert.
 
@@ -110,16 +113,15 @@ L'application utilise la sécurité Spring Boot et Spring Security pour garantir
 
 ![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/7d2d2b8e-2ec5-4e06-a145-167e0dbcde35)
 
-![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/17eb0735-0d25-4741-b526-8629f5ffc985)
+![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/6abd063d-a557-4247-868f-3a66db1f8742)
 
+![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/cb43d280-54d0-440a-af77-3bc09beaf03f)
 
 ## 9. Conclusion
 
 La mise en place d'une architecture orientée Stream Processing avec Spring Cloud Discovery (Eureka), Consul, Vault et Kafka ouvre de vastes opportunités pour les entreprises à la recherche de solutions de traitement de données en temps réel. Ce contrôle de contenu a jeté les bases de l'intégration de ces technologies clés, démontrant leur utilité dans un contexte de traitement de flux en temps réel.
 La combinaison de la découverte de services, de la gestion sécurisée des secrets et du traitement de flux en continu offre une solution complète pour relever les défis posés par le monde des données en temps réel. Les applications vont de la surveillance en temps réel à l'analyse de la fraude, en passant par la gestion logistique et bien d'autres. La réactivité devient la norme, et ces technologies jouent un rôle crucial dans la construction d'infrastructures robustes et sécurisées.
 En continuant à explorer, expérimenter et intégrer ces technologies, les entreprises sont mieux préparées à répondre aux exigences changeantes du monde moderne des données. Le potentiel est vaste, et il appartient à chaque organisation de mettre en place des architectures de traitement de flux innovantes pour prospérer dans cet environnement en constante évolution.
-
-
 
 <br>
 
