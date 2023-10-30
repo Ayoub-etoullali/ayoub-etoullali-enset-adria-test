@@ -56,17 +56,17 @@
     <thead>
     <tr>
       <th>ID</th>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Quantity</th>
+      <th>solde</th>
+      <th>date</th>
+      <th>devise</th>
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let p of products._embedded.products">
+    <tr *ngFor="let p of products._embedded.wallets">
       <td>{{p.id}}</td>
-      <td>{{p.name}}</td>
-      <td>{{p.price}}</td>
-      <td>{{p.quantity}}</td>
+      <td>{{p.solde}}</td>
+      <td>{{p.dateCreation}}</td>
+      <td>{{p.devise}}</td>
     </tr>
     </tbody>
   </table>

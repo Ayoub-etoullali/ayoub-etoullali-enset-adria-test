@@ -13,7 +13,7 @@ export class ProductsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get("http://localhost:9999/inventory-service/products?projection=fullProduct")
+    this.http.get("http://localhost:9999/wallet-service/wallets?projection=fullProduct")
       .subscribe({
         next: (data) => {
           this.products = data;
