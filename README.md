@@ -107,6 +107,8 @@ Expliquez comment la configuration de l'application est gérée, y compris l'uti
 
 ![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/a774a033-f5b2-4d9e-8529-d4325b321d5a)
 
+![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/c4f9cf24-5ea1-485a-b04e-94850f699f4f)
+
 ## 4. Sécurité de l'Application
 
 L'application utilise la sécurité Spring Boot et Spring Security pour garantir que seuls les utilisateurs authentifiés ont accès aux fonctionnalités sensibles. L'authentification et l'autorisation sont gérées à l'aide de tokens JWT (JSON Web Tokens).
