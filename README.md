@@ -41,10 +41,12 @@ L'architecture de l'application est basée sur des microservices interagissant v
 Le service Wallet gère les portefeuilles des clients, enregistrant les informations sur le solde, la devise et la date de création.
 
 #### Endpoints API
-- `GET /wallets/` 
+- `GET /wallets/`
+  
 ![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/ba502c1d-75cb-490a-8098-f5b106c94099)
 
 - `GET /clients/` : Récupérer les détails d'un portefeuille par ID.
+  
 ![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/f93e3322-9a9e-488f-9778-5ad1ec837372)
 
 - `POST /wallets` : Créer un nouveau portefeuille.
@@ -76,9 +78,11 @@ Le service Gateway agit comme point d'entrée de l'application, gérant les dema
 Le service Discovery permet aux microservices de s'enregistrer et de découvrir les autres services au sein de l'application.
 
 IP Addresse
+
 ![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/0c4803bf-51ea-47cf-9149-3091c42d5b84)
 
 Consul 
+
 ![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/284d35a5-52d1-4754-93a1-f4b051ac8003)
 
 ### Config Service
@@ -104,7 +108,23 @@ L'application utilise la sécurité Spring Boot et Spring Security pour garantir
 
 ## 5. Conception Frontend
 
-Donnez un aperçu de la conception du frontend, y compris des captures d'écran et des explications sur la manière dont les utilisateurs interagissent avec l'application.
+![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/7d2d2b8e-2ec5-4e06-a145-167e0dbcde35)
+
+![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/17eb0735-0d25-4741-b526-8629f5ffc985)
+
 
 ## 9. Conclusion
+
+La mise en place d'une architecture orientée Stream Processing avec Spring Cloud Discovery (Eureka), Consul, Vault et Kafka ouvre de vastes opportunités pour les entreprises à la recherche de solutions de traitement de données en temps réel. Ce contrôle de contenu a jeté les bases de l'intégration de ces technologies clés, démontrant leur utilité dans un contexte de traitement de flux en temps réel.
+La combinaison de la découverte de services, de la gestion sécurisée des secrets et du traitement de flux en continu offre une solution complète pour relever les défis posés par le monde des données en temps réel. Les applications vont de la surveillance en temps réel à l'analyse de la fraude, en passant par la gestion logistique et bien d'autres. La réactivité devient la norme, et ces technologies jouent un rôle crucial dans la construction d'infrastructures robustes et sécurisées.
+En continuant à explorer, expérimenter et intégrer ces technologies, les entreprises sont mieux préparées à répondre aux exigences changeantes du monde moderne des données. Le potentiel est vaste, et il appartient à chaque organisation de mettre en place des architectures de traitement de flux innovantes pour prospérer dans cet environnement en constante évolution.
+
+
+
+<br>
+
+![ayoub](https://user-images.githubusercontent.com/92756846/220727344-dbb21e84-4584-4055-bde5-a3c90a64a618.jpg)
+
+<kbd>Enjoy Code</kbd> 👨‍💻
+[My portfolio](https://ayoub-etoullali.netlify.app/)
 
