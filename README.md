@@ -97,6 +97,8 @@ Le service Config fournit une configuration centralisée pour l'ensemble de l'ap
 
 ![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/36edada2-71aa-4588-85c9-fa296902fe2b)
 
+![image](https://github.com/Ayoub-etoullali/ayoub-etoullali-enset-adria-test/assets/92756846/9f01334f-bada-4452-bf42-6d4015b6a916)
+
 ## 3. Configuration
 
 Expliquez comment la configuration de l'application est gérée, y compris l'utilisation du service de configuration centralisée.
